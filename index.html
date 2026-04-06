@@ -4,7 +4,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-      Joana Favero - Terapias Holísticas - Cristalterapia, Medicina Chinesa,
+      Joana Favero - Terapias Integrativas - Cristalterapia, Medicina Chinesa,
       Radiestesia e Cura Energética
     </title>
     <meta
@@ -20,11 +20,11 @@
     <!-- Open Graph -->
     <meta
       property="og:title"
-      content="Joana Favero - Terapias Holísticas - Cristalterapia, Medicina Chinesa, Radiestesia e Cura Energética"
+      content="Joana Favero - Terapias Integrativas - Cristalterapia, Medicina Chinesa, Radiestesia e Cura Energética"
     />
     <meta
       property="og:description"
-      content="Reconecte-se com sua essência através de terapias holísticas integrativas. Cristalterapia, medicina chinesa, radiestesia e cura multidimensional arcturiana."
+      content="Reconecte-se com sua essência através de terapias integrativas. Cristalterapia, medicina chinesa, radiestesia e cura multidimensional arcturiana."
     />
     <meta property="og:type" content="website" />
 
@@ -1239,6 +1239,24 @@
       .animate-glow {
         animation: glow 2s ease-in-out infinite;
       }
+      /* Custom Styles for Método R.E.S.S.O.A.R */
+      .bg-custom-forest { background-color: #161d15 !important; }
+      .text-custom-sage { color: #b8c2b6 !important; }
+      .bg-custom-sage-15 { background-color: rgba(184, 194, 182, 0.15) !important; }
+      .bg-custom-white-5 { background-color: rgba(255, 255, 255, 0.05) !important; }
+      .border-custom-white-10 { border-color: rgba(255, 255, 255, 0.1) !important; }
+      .columns-1 { column-count: 1 !important; }
+      @media (min-width: 768px) {
+        .md\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+        .md\:columns-2 { column-count: 2 !important; }
+      }
+      @media (min-width: 1024px) {
+        .lg\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
+        .lg\:columns-3 { column-count: 3 !important; }
+        .lg-grid-cols-4 { display: grid !important; grid-template-columns: repeat(4, minmax(0, 1fr)) !important; }
+        .lg-col-span-2 { grid-column: span 2 / span 2 !important; }
+      }
+      .break-inside-avoid { break-inside: avoid !important; }
     </style>
     <link
       type="image/png"
@@ -1263,7 +1281,7 @@
           <div class="max-w-7xl mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
               <a href="#" class="flex items-center gap-2 z-50">
-              <img src="assets/img/logotipo.png" alt="Joana Favero Logotipo" class="h-14 md:h-[70px] w-auto" />
+              <img src="assets/img/logotipo.png" alt="Joana Fávero Logotipo" class="h-14 md:h-[70px] w-auto" />
             </a>
               <div class="hidden md:flex items-center space-x-10">
                 <button
@@ -1336,7 +1354,7 @@
                 <span
                   class="text-sage text-xs uppercase tracking-[0.3em]"
                   style="font-family: &quot;Nunito Sans&quot;, sans-serif"
-                  >Terapias Holísticas Integrativas</span
+                  >Terapias Integrativas</span
                 >
               </div>
               <h2
@@ -1346,22 +1364,33 @@
                   font-weight: 400;
                 "
               >
-                Reconecte-se<br />com sua<br /><span style="color: #b8c2b6 !important; font-weight: 500 !important; font-style: normal !important;"
-                  >essência</span
-                >
+                Quando você cura a <span style="color: #b8c2b6 !important; font-weight: 500 !important; font-style: normal !important;"
+                  >raiz</span
+                >, toda a sua<br />vida começa a fluir
               </h2>
               <p
-                class="text-base md:text-lg text-white/85 mb-12 leading-relaxed max-w-lg"
+                class="text-base md:text-lg text-white/85 mb-6 leading-relaxed max-w-xl"
                 style="
                   font-family: &quot;Nunito Sans&quot;, sans-serif;
                   font-weight: 300;
                 "
               >
-                Através da <strong>cristalterapia</strong>,
-                <strong>medicina tradicional chinesa</strong>,
-                <strong>radiestesia</strong> e outras terapias integrativas,
-                desperte o poder de cura que existe dentro de você.
+                Através de terapias integrativas, eu ajudo você a liberar bloqueios emocionais e energéticos, romper padrões repetitivos e reconquistar leveza, clareza e direção na sua vida.
               </p>
+              <div class="flex flex-col gap-6 mb-12">
+                <div class="flex items-center gap-4">
+                  <i class="ri-map-pin-line text-sage text-2xl"></i>
+                  <p class="text-cream text-base md:text-lg font-light leading-relaxed" style="font-family: &quot;Nunito Sans&quot;, sans-serif;">
+                    Atendimentos presenciais em <span class="font-normal text-white">Bento Gonçalves</span> e online para o Brasil e exterior
+                  </p>
+                </div>
+                <div class="flex items-center gap-4">
+                  <i class="ri-heart-3-line text-sage text-2xl"></i>
+                  <p class="text-cream text-base md:text-lg font-light leading-relaxed" style="font-family: &quot;Nunito Sans&quot;, sans-serif;">
+                    Para mulheres que desejam transformação emocional profunda e duradoura
+                  </p>
+                </div>
+              </div>
               <div class="flex flex-col sm:flex-row gap-4">
                 <button
                   class="group px-8 py-4 bg-forest text-cream rounded-full text-sm font-medium hover:bg-forest/90 transition-all inline-flex items-center justify-center space-x-2 whitespace-nowrap cursor-pointer shadow-lg hover:shadow-xl"
@@ -1442,63 +1471,228 @@
                     font-weight: 400;
                   "
                 >
-                  Imagine um espaço onde você pode
-                  <span style="color: #455043 !important; font-weight: 600 !important; font-style: normal !important;">soltar os pesos </span>da mente e coração
+                  Você já percebeu que alguns padrões <span style="color: #455043 !important; font-weight: 600 !important; font-style: normal !important;">continuam se repetindo</span> na sua vida?
                 </h2>
                 <div
-                  class="space-y-5 text-sm text-forest/80 leading-relaxed"
+                  class="space-y-5 text-base text-forest/80 leading-relaxed"
                   style="font-family: &quot;Nunito Sans&quot;, sans-serif"
                 >
                   <p>
-                    Um lugar que acolhe não só as suas dores, mas também o seu desejo de viver com mais equilíbrio, leveza e propósito. Com abordagens terapêuticas integrativas e personalizadas, acompanho pre-adolescentes, adolescentes e adultos em processos de cura emocional — especialmente em situações como ansiedade, depressão e síndrome do pânico.
+                    Ansiedade, sobrecarga emocional, relacionamentos difíceis ou uma sensação constante de desconexão de si mesma não surgem por acaso — eles têm uma origem mais profunda.
                   </p>
                   <p>
-                    Sou <strong>Joana Favero</strong>, terapeuta integrativa, com uma trajetória de superação que se reflete no cuidado com que acompanho cada pessoa. Utilizo técnicas como apometria, reiki, medicina chinesa e psicoterapia reencarnacionista para ajudar você a identificar bloqueios, liberar energias estagnadas e redescobrir a força que já existe em você.
+                    Eu sou <strong>Joana Fávero</strong>, terapeuta integrativa especializada em cura emocional profunda e desbloqueio energético. Acompanho adolescentes e adultos que desejam ir além do alívio dos sintomas e transformar, de forma real, aquilo que está na raiz dos seus conflitos.
                   </p>
                   <p>
-                    Seja no presencial em Bento Gonçalves - RS, ou no online, aqui é um espaço seguro para se reconectar com sua essência, transformar vivências e criar novos caminhos de bem-estar. Se você sente que é hora de se reencontrar e curar feridas, este pode ser o seu primeiro passo. Você merece viver plenamente - com harmonia, consciência e propósito.
+                    Através do <strong>Método R.E.S.S.O.A.R</strong>, conduzo um processo terapêutico profundo e personalizado, que atua nas dimensões emocional, energética e sistêmica dos seus padrões.
+                  </p>
+                  <p>
+                    Mais do que acolhimento, aqui você encontra um caminho de transformação estruturado — com consciência, segurança e direcionamento.
+                  </p>
+                  <p class="font-medium text-forest">
+                    Atendimentos presenciais em Bento Gonçalves – RS e online para todo o Brasil.
+                  </p>
+                  <p class="italic text-sage-dark">
+                    Se você sente que é hora de parar de apenas lidar com os sintomas e começar a transformar a raiz, este pode ser o seu primeiro passo.
                   </p>
                 </div>
-                                <div class="mt-10 grid grid-cols-2 md:grid-cols-3 gap-6">
-                  <div class="flex flex-col items-start p-4 bg-white rounded-xl">
-                    <div class="w-10 h-10 flex items-center justify-center mb-3 bg-sage/30 rounded-lg">
-                      <i class="ri-leaf-line text-xl text-forest"></i>
-                    </div>
-                    <h3 class="text-sm font-semibold text-forest mb-1" style="font-family: &quot;Nunito Sans&quot;, sans-serif">
-                      Reencarnacionista
-                    </h3>
+                <div class="mt-12 flex flex-col items-start gap-6">
+                  <p class="text-forest/90 text-lg md:text-xl font-medium max-w-md leading-tight" style="font-family: &quot;Cormorant Garamond&quot;, serif;">
+                    Agende sua sessão e inicie sua transformação pela raiz.
+                  </p>
+                  <button
+                    class="group px-8 py-4 bg-forest text-cream rounded-full text-sm font-medium hover:bg-forest/90 transition-all inline-flex items-center justify-center space-x-3 whitespace-nowrap cursor-pointer shadow-lg hover:shadow-xl"
+                    style="font-family: &quot;Nunito Sans&quot;, sans-serif"
+                  >
+                    <span>Agendar Sessão</span>
+                    <i class="ri-arrow-right-line text-lg group-hover:translate-x-1 transition-transform"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="metodo" class="py-28" style="background-color: #1a2219 !important; color: #ffffff !important; overflow: hidden; position: relative;">
+          <!-- Decorações em background -->
+          <div class="absolute top-0 right-0 w-[500px] h-[500px] rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl opacity-30" style="background-color: #b8c2b6 !important;"></div>
+          <div class="absolute bottom-0 left-0 w-[500px] h-[500px] rounded-full translate-y-1/2 -translate-x-1/2 blur-3xl opacity-30" style="background-color: #b8c2b6 !important;"></div>
+          
+          <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="text-center mb-20">
+              <div class="inline-block mb-6">
+                <span class="text-xs uppercase tracking-[0.2em] font-medium px-4 py-2 rounded-full" style="font-family: 'Nunito Sans', sans-serif; color: #b8c2b6 !important; background-color: rgba(255,255,255,0.1) !important;">O Processo Terapêutico</span>
+              </div>
+              <h2 class="text-4xl md:text-6xl text-white mb-8" style="font-family: 'Cormorant Garamond', serif; font-weight: 400;">
+                ✨ Método <span style="color: #b8c2b6 !important;">R.E.S.S.O.A.R</span>
+              </h2>
+              <p class="text-lg md:text-xl max-w-3xl mx-auto font-light leading-relaxed" style="font-family: 'Nunito Sans', sans-serif; color: rgba(255,255,255,0.8) !important;">
+                Um processo profundo que atua na raiz emocional, comportamental, energética e sistêmica dos seus padrões.
+              </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3" style="gap: 40px;">
+              <!-- Item R -->
+              <div class="relative group">
+                <div class="text-7xl md:text-8xl font-serif absolute -top-6 -left-2 transition-colors duration-500 pointer-events-none" style="font-family: 'Cormorant Garamond', serif; color: rgba(255,255,255,0.05) !important;">R</div>
+                <div class="relative">
+                  <div class="w-12 h-12 flex items-center justify-center rounded-xl mb-6 transform group-hover:-translate-y-1 transition-all duration-300" style="background-color: rgba(184, 194, 182, 0.2) !important;">
+                    <i class="ri-search-eye-line text-2xl" style="color: #b8c2b6 !important;"></i>
                   </div>
-                  <div class="flex flex-col items-start p-4 bg-white rounded-xl">
-                    <div class="w-10 h-10 flex items-center justify-center mb-3 bg-sage/20 rounded-lg">
-                      <i class="ri-compass-3-line text-xl text-forest"></i>
-                    </div>
-                    <h3 class="text-sm font-semibold text-forest mb-1" style="font-family: &quot;Nunito Sans&quot;, sans-serif">
-                      Mesa Radiônica
-                    </h3>
+                  <h3 class="text-2xl text-white mb-3" style="font-family: 'Cormorant Garamond', serif;">Reconhecimento</h3>
+                  <p class="text-sm leading-relaxed font-light" style="font-family: 'Nunito Sans', sans-serif; color: rgba(255,255,255,0.7) !important;">Identificar com clareza os padrões emocionais, energéticos e sistêmicos que se repetem na sua vida.</p>
+                </div>
+              </div>
+
+              <!-- Item E -->
+              <div class="relative group">
+                <div class="text-7xl md:text-8xl font-serif absolute -top-6 -left-2 transition-colors duration-500 pointer-events-none" style="font-family: 'Cormorant Garamond', serif; color: rgba(255,255,255,0.05) !important;">E</div>
+                <div class="relative">
+                  <div class="w-12 h-12 flex items-center justify-center rounded-xl mb-6 transform group-hover:-translate-y-1 transition-all duration-300" style="background-color: rgba(184, 194, 182, 0.2) !important;">
+                    <i class="ri-lightbulb-line text-2xl" style="color: #b8c2b6 !important;"></i>
                   </div>
-                  <div class="flex flex-col items-start p-4 bg-white rounded-xl">
-                    <div class="w-10 h-10 flex items-center justify-center mb-3 bg-sand/40 rounded-lg">
-                      <i class="ri-file-text-line text-xl text-forest"></i>
-                    </div>
-                    <h3 class="text-sm font-semibold text-forest mb-1" style="font-family: &quot;Nunito Sans&quot;, sans-serif">
-                      Mapa Numerológico
-                    </h3>
+                  <h3 class="text-2xl text-white mb-3" style="font-family: 'Cormorant Garamond', serif;">Expansão de Consciência</h3>
+                  <p class="text-sm leading-relaxed font-light" style="font-family: 'Nunito Sans', sans-serif; color: rgba(255,255,255,0.7) !important;">Compreender a origem dos seus conflitos e acessar uma nova forma de perceber a si mesma e suas experiências.</p>
+                </div>
+              </div>
+
+              <!-- Item S (1) -->
+              <div class="relative group">
+                <div class="text-7xl md:text-8xl font-serif absolute -top-6 -left-2 transition-colors duration-500 pointer-events-none" style="font-family: 'Cormorant Garamond', serif; color: rgba(255,255,255,0.05) !important;">S</div>
+                <div class="relative">
+                  <div class="w-12 h-12 flex items-center justify-center rounded-xl mb-6 transform group-hover:-translate-y-1 transition-all duration-300" style="background-color: rgba(184, 194, 182, 0.2) !important;">
+                    <i class="ri-refresh-line text-2xl" style="color: #b8c2b6 !important;"></i>
                   </div>
-                  <div class="flex flex-col items-start p-4 bg-white rounded-xl">
-                    <div class="w-10 h-10 flex items-center justify-center mb-3 bg-sage/20 rounded-lg">
-                      <i class="ri-plant-line text-xl text-forest"></i>
-                    </div>
-                    <h3 class="text-sm font-semibold text-forest mb-1" style="font-family: &quot;Nunito Sans&quot;, sans-serif">
-                      Terapia Floral
-                    </h3>
+                  <h3 class="text-2xl text-white mb-3" style="font-family: 'Cormorant Garamond', serif;">Soltura Energética</h3>
+                  <p class="text-sm leading-relaxed font-light" style="font-family: 'Nunito Sans', sans-serif; color: rgba(255,255,255,0.7) !important;">Liberar cargas emocionais, memórias e registros que mantêm os padrões ativos no seu campo.</p>
+                </div>
+              </div>
+
+              <!-- Item S (2) -->
+              <div class="relative group">
+                <div class="text-7xl md:text-8xl font-serif absolute -top-6 -left-2 transition-colors duration-500 pointer-events-none" style="font-family: 'Cormorant Garamond', serif; color: rgba(255,255,255,0.05) !important;">S</div>
+                <div class="relative">
+                  <div class="w-12 h-12 flex items-center justify-center rounded-xl mb-6 transform group-hover:-translate-y-1 transition-all duration-300" style="background-color: rgba(184, 194, 182, 0.2) !important;">
+                    <i class="ri-shield-user-line text-2xl" style="color: #b8c2b6 !important;"></i>
                   </div>
-                  <div class="flex flex-col items-start p-4 bg-white rounded-xl md:col-span-2 lg:col-span-1">
-                    <div class="w-10 h-10 flex items-center justify-center mb-3 bg-sage/30 rounded-lg">
-                      <i class="ri-sparkling-line text-xl text-forest"></i>
+                  <h3 class="text-2xl text-white mb-3" style="font-family: 'Cormorant Garamond', serif;">Sustentação Interna</h3>
+                  <p class="text-sm leading-relaxed font-light" style="font-family: 'Nunito Sans', sans-serif; color: rgba(255,255,255,0.7) !important;">Fortalecer sua base emocional, autoestima e segurança interna para sustentar mudanças reais.</p>
+                </div>
+              </div>
+
+              <!-- Item O -->
+              <div class="relative group">
+                <div class="text-7xl md:text-8xl font-serif absolute -top-6 -left-2 transition-colors duration-500 pointer-events-none" style="font-family: 'Cormorant Garamond', serif; color: rgba(255,255,255,0.05) !important;">O</div>
+                <div class="relative">
+                  <div class="w-12 h-12 flex items-center justify-center rounded-xl mb-6 transform group-hover:-translate-y-1 transition-all duration-300" style="background-color: rgba(184, 194, 182, 0.2) !important;">
+                    <i class="ri-node-tree text-2xl" style="color: #b8c2b6 !important;"></i>
+                  </div>
+                  <h3 class="text-2xl text-white mb-3" style="font-family: 'Cormorant Garamond', serif;">Organização Interna</h3>
+                  <p class="text-sm leading-relaxed font-light" style="font-family: 'Nunito Sans', sans-serif; color: rgba(255,255,255,0.7) !important;">Reequilibrar emoções, pensamentos e energia, trazendo clareza, estabilidade e coerência interna.</p>
+                </div>
+              </div>
+
+              <!-- Item A -->
+              <div class="relative group">
+                <div class="text-7xl md:text-8xl font-serif absolute -top-6 -left-2 transition-colors duration-500 pointer-events-none" style="font-family: 'Cormorant Garamond', serif; color: rgba(255,255,255,0.05) !important;">A</div>
+                <div class="relative">
+                  <div class="w-12 h-12 flex items-center justify-center rounded-xl mb-6 transform group-hover:-translate-y-1 transition-all duration-300" style="background-color: rgba(184, 194, 182, 0.2) !important;">
+                    <i class="ri-focus-3-line text-2xl" style="color: #b8c2b6 !important;"></i>
+                  </div>
+                  <h3 class="text-2xl text-white mb-3" style="font-family: 'Cormorant Garamond', serif;">Ação Consciente</h3>
+                  <p class="text-sm leading-relaxed font-light" style="font-family: 'Nunito Sans', sans-serif; color: rgba(255,255,255,0.7) !important;">Transformar padrões em novas escolhas, com mais presença, autonomia e direcionamento.</p>
+                </div>
+              </div>
+
+              <!-- Item R (Final) -->
+              <div class="relative group lg:col-start-2">
+                <div class="">
+                  <div class="text-7xl md:text-8xl font-serif absolute -top-6 -left-2 transition-colors duration-500 pointer-events-none" style="font-family: 'Cormorant Garamond', serif; color: rgba(255,255,255,0.05) !important;">R</div>
+                  <div class="relative">
+                    <div class="w-12 h-12 flex items-center justify-center rounded-xl mb-6 transform group-hover:-translate-y-1 transition-all duration-300" style="background-color: rgba(184, 194, 182, 0.2) !important;">
+                      <i class="ri-compass-line text-2xl" style="color: #b8c2b6 !important;"></i>
                     </div>
-                    <h3 class="text-sm font-semibold text-forest mb-1" style="font-family: &quot;Nunito Sans&quot;, sans-serif">
-                      Reiki
-                    </h3>
+                    <h3 class="text-2xl text-white mb-3" style="font-family: 'Cormorant Garamond', serif;">Reposicionamento de Vida</h3>
+                    <p class="text-sm leading-relaxed font-light" style="font-family: 'Nunito Sans', sans-serif; color: rgba(255,255,255,0.7) !important;">Assumir uma nova forma de viver, se relacionar e se expressar, alinhada com quem você realmente é.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Como Funciona -->
+            <div class="mt-32 pt-24" style="margin-top: 60px;">
+              <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="order-2 md:order-1">
+                  <div class="p-8 md:p-12 rounded-3xl backdrop-blur-sm relative overflow-hidden group" style="background-color: rgba(255,255,255,0.05) !important; border: 1px solid rgba(255,255,255,0.1) !important; border-radius: 20px;">
+                    <div class="absolute top-0 right-0 w-32 h-32 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2 transition-all" style="background-color: rgba(184, 194, 182, 0.1) !important;"></div>
+                    
+                    <h3 class="text-3xl text-white mb-8" style="font-family: 'Cormorant Garamond', serif;">Como funciona o processo</h3>
+                    <p class="text-base mb-8 leading-relaxed font-light" style="font-family: 'Nunito Sans', sans-serif; color: rgba(255,255,255,0.8) !important;">
+                      As sessões são individuais, conduzidas de forma profunda e totalmente personalizada, respeitando o seu momento e a sua história.
+                    </p>
+                    
+                    <div class="space-y-6 mb-10">
+                      <div class="flex items-center gap-4">
+                        <div class="w-2 h-2 rounded-full" style="background-color: #b8c2b6 !important;"></div>
+                        <span class="text-sm" style="color: rgba(255,255,255,0.9) !important;">Investigação do Inconsciente</span>
+                      </div>
+                      <div class="flex items-center gap-4">
+                        <div class="w-2 h-2 rounded-full" style="background-color: #b8c2b6 !important;"></div>
+                        <span class="text-sm" style="color: rgba(255,255,255,0.9) !important;">Terapia Sistêmica Familiar</span>
+                      </div>
+                      <div class="flex items-center gap-4">
+                        <div class="w-2 h-2 rounded-full" style="background-color: #b8c2b6 !important;"></div>
+                        <span class="text-sm" style="color: rgba(255,255,255,0.9) !important;">Técnicas de liberação emocional</span>
+                      </div>
+                    </div>
+                    
+                    <p class="text-sm italic leading-relaxed mb-10" style="font-family: 'Nunito Sans', sans-serif; color: rgba(255,255,255,0.6) !important;">
+                      Cada sessão trabalha em múltiplas camadas — emocional, energética e comportamental — promovendo uma transformação gradual, consistente e duradoura.
+                    </p>
+
+                    <button
+                      class="group w-full px-8 py-4 rounded-full text-sm font-semibold hover:bg-white transition-all inline-flex items-center justify-center space-x-3 shadow-lg"
+                      style="font-family: 'Nunito Sans', sans-serif; background-color: #b8c2b6 !important; color: #1a2219 !important;"
+                    >
+                      <span>Quero Iniciar Minha Jornada</span>
+                      <i class="ri-arrow-right-line text-lg group-hover:translate-x-1 transition-transform"></i>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="order-1 md:order-2">
+                  <div class="inline-block mb-6">
+                    <span class="text-xs uppercase tracking-[0.2em] font-medium" style="font-family: 'Nunito Sans', sans-serif; color: #b8c2b6 !important;">A Base da Transformação</span>
+                  </div>
+                  <h2 class="text-4xl md:text-5xl text-white mb-8" style="font-family: 'Cormorant Garamond', serif; font-weight: 400;">
+                    Atuação em <span style="color: #b8c2b6 !important;">múltiplas camadas</span>
+                  </h2>
+                  <div class="space-y-8">
+                    <p class="text-base leading-relaxed font-light" style="font-family: 'Nunito Sans', sans-serif; color: rgba(255,255,255,0.7) !important; margin-bottom: 20px;">
+                      Nesta abordagem, não olhamos apenas para o comportamento visível, mas buscamos as raízes que sustentam os padrões que você hoje deseja transformar.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6">
+                      <div class="p-6 rounded-2xl border" style="background-color: rgba(255,255,255,0.05) !important; border-color: rgba(255,255,255,0.1) !important;">
+                        <div class="text-2xl mb-2 font-serif" style="font-family: 'Cormorant Garamond', serif; color: #b8c2b6 !important;">01.</div>
+                        <h4 class="text-white font-medium mb-1">Emocional</h4>
+                        <p class="text-xs" style="color: rgba(255,255,255,0.5) !important;">Ciclagem e acolhimento das feridas.</p>
+                      </div>
+                      <div class="p-6 rounded-2xl border" style="background-color: rgba(255,255,255,0.05) !important; border-color: rgba(255,255,255,0.1) !important;">
+                        <div class="text-2xl mb-2 font-serif" style="font-family: 'Cormorant Garamond', serif; color: #b8c2b6 !important;">02.</div>
+                        <h4 class="text-white font-medium mb-1">Energética</h4>
+                        <p class="text-xs" style="color: rgba(255,255,255,0.5) !important;">Limpeza e alinhamento vibracional.</p>
+                      </div>
+                      <div class="p-6 rounded-2xl border" style="background-color: rgba(255,255,255,0.05) !important; border-color: rgba(255,255,255,0.1) !important;">
+                        <div class="text-2xl mb-2 font-serif" style="font-family: 'Cormorant Garamond', serif; color: #b8c2b6 !important;">03.</div>
+                        <h4 class="text-white font-medium mb-1">Comportamental</h4>
+                        <p class="text-xs" style="color: rgba(255,255,255,0.5) !important;">Mudança de hábitos e escolhas.</p>
+                      </div>
+                      <div class="p-6 rounded-2xl border" style="background-color: rgba(255,255,255,0.05) !important; border-color: rgba(255,255,255,0.1) !important;">
+                        <div class="text-2xl mb-2 font-serif" style="font-family: 'Cormorant Garamond', serif; color: #b8c2b6 !important;">04.</div>
+                        <h4 class="text-white font-medium mb-1">Sistêmica</h4>
+                        <p class="text-xs" style="color: rgba(255,255,255,0.5) !important;">Ordem e lugar na ancestralidade.</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1552,7 +1746,7 @@
               <!-- Service 2: Horizontal Card -->
               <div class="bg-cream rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 cursor-pointer group">
                 <div class="w-full h-48 overflow-hidden">
-                  <img alt="Mesa Radiônica Almaterapia" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" src="assets/img/mesa_almaterapia.png" />
+                  <img alt="Mesa Radiônica Almaterapia" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" src="assets/img/services/mesa-radionica.jpeg" />
                 </div>
                 <div class="p-8">
                   <div class="w-12 h-12 flex items-center justify-center bg-sage/20 rounded-xl mb-4">
@@ -1590,7 +1784,7 @@
             <div class="grid md:grid-cols-2 gap-6 mt-12">
               <div class="bg-cream rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 cursor-pointer group">
                   <div class="w-full h-48 overflow-hidden">
-                    <img alt="Terapia Floral" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" src="assets/img/terapia_floral.png" />
+                    <img alt="Terapia Floral" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" src="assets/img/services/terapia-floral.jpeg" />
                   </div>
                   <div class="p-8">
                   <div class="w-14 h-14 flex items-center justify-center bg-sage/20 rounded-xl mb-5">
@@ -1606,7 +1800,7 @@
               </div>
               <div class="bg-cream rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 cursor-pointer group">
                 <div class="w-full h-48 overflow-hidden">
-                    <img alt="Reiki" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" src="assets/img/reiki.png" />
+                    <img alt="Reiki" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" src="assets/img/services/reiki.jpeg" />
                   </div>
                   <div class="p-8">
                   <div class="w-14 h-14 flex items-center justify-center bg-sage/15 rounded-xl mb-5">
@@ -1643,262 +1837,74 @@
                 Histórias de<span style="color: #455043 !important; font-weight: 600 !important; font-style: normal !important;"> transformação</span>
               </h2>
             </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div
-                class="bg-white rounded-2xl p-8 shadow-md hover:shadow-lg transition-all duration-500 hover:-translate-y-1"
-              >
-                <div class="flex items-center mb-6">
-                  <div
-                    class="w-14 h-14 bg-sage/30 rounded-full flex items-center justify-center mr-4"
-                  >
-                    <i class="ri-user-smile-line text-2xl text-forest"></i>
-                  </div>
-                  <div>
-                    <h3
-                      class="text-base font-semibold text-forest"
-                      style="font-family: &quot;Nunito Sans&quot;, sans-serif"
-                    >
-                      Ana Beatriz
-                    </h3>
-                    <p
-                      class="text-xs text-sage"
-                      style="font-family: &quot;Nunito Sans&quot;, sans-serif"
-                    >
-                      Cristalterapia
-                    </p>
-                  </div>
-                </div>
-                <div class="mb-4">
-                  <div class="flex space-x-1">
-                    <i class="ri-star-fill text-sand-dark text-sm"></i
-                    ><i class="ri-star-fill text-sand-dark text-sm"></i
-                    ><i class="ri-star-fill text-sand-dark text-sm"></i
-                    ><i class="ri-star-fill text-sand-dark text-sm"></i
-                    ><i class="ri-star-fill text-sand-dark text-sm"></i>
-                  </div>
-                </div>
-                <p
-                  class="text-sm text-forest/75 leading-relaxed"
-                  style="font-family: &quot;Nunito Sans&quot;, sans-serif"
-                >
-                  “A sessão de cristalterapia foi transformadora. Senti uma
-                  leveza que não experimentava há anos. Os cristais realmente
-                  desbloquearam energias estagnadas e me trouxeram uma paz
-                  interior profunda.”
-                </p>
+            <div class="columns-1 md:columns-2 lg:columns-3 gap-6">
+              <div class="break-inside-avoid mb-6">
+                <img
+                  src="assets/img/avaliacoes/WhatsApp Image 2026-03-16 at 18.03.08.jpeg"
+                  alt="Depoimento 1"
+                  class="w-full rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 hover:scale-[1.02]"
+                  loading="lazy"
+                />
               </div>
-              <div
-                class="bg-white rounded-2xl p-8 shadow-md hover:shadow-lg transition-all duration-500 hover:-translate-y-1"
-              >
-                <div class="flex items-center mb-6">
-                  <div
-                    class="w-14 h-14 bg-sage/20 rounded-full flex items-center justify-center mr-4"
-                  >
-                    <i class="ri-user-line text-2xl text-forest"></i>
-                  </div>
-                  <div>
-                    <h3
-                      class="text-base font-semibold text-forest"
-                      style="font-family: &quot;Nunito Sans&quot;, sans-serif"
-                    >
-                      Carlos Eduardo
-                    </h3>
-                    <p
-                      class="text-xs text-sage"
-                      style="font-family: &quot;Nunito Sans&quot;, sans-serif"
-                    >
-                      Medicina Chinesa
-                    </p>
-                  </div>
-                </div>
-                <div class="mb-4">
-                  <div class="flex space-x-1">
-                    <i class="ri-star-fill text-sand-dark text-sm"></i
-                    ><i class="ri-star-fill text-sand-dark text-sm"></i
-                    ><i class="ri-star-fill text-sand-dark text-sm"></i
-                    ><i class="ri-star-fill text-sand-dark text-sm"></i
-                    ><i class="ri-star-fill text-sand-dark text-sm"></i>
-                  </div>
-                </div>
-                <p
-                  class="text-sm text-forest/75 leading-relaxed"
-                  style="font-family: &quot;Nunito Sans&quot;, sans-serif"
-                >
-                  “Depois de anos com dores crônicas, a medicina tradicional
-                  chinesa me devolveu qualidade de vida. A acupuntura combinada
-                  com fitoterapia fez milagres no meu corpo e na minha mente.”
-                </p>
+              <div class="break-inside-avoid mb-6">
+                <img
+                  src="assets/img/avaliacoes/WhatsApp Image 2026-03-16 at 18.04.32.jpeg"
+                  alt="Depoimento 2"
+                  class="w-full rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 hover:scale-[1.02]"
+                  loading="lazy"
+                />
               </div>
-              <div
-                class="bg-white rounded-2xl p-8 shadow-md hover:shadow-lg transition-all duration-500 hover:-translate-y-1"
-              >
-                <div class="flex items-center mb-6">
-                  <div
-                    class="w-14 h-14 bg-sand/40 rounded-full flex items-center justify-center mr-4"
-                  >
-                    <i class="ri-user-heart-line text-2xl text-forest"></i>
-                  </div>
-                  <div>
-                    <h3
-                      class="text-base font-semibold text-forest"
-                      style="font-family: &quot;Nunito Sans&quot;, sans-serif"
-                    >
-                      Mariana Luz
-                    </h3>
-                    <p
-                      class="text-xs text-sage"
-                      style="font-family: &quot;Nunito Sans&quot;, sans-serif"
-                    >
-                      Cura Arcturiana
-                    </p>
-                  </div>
-                </div>
-                <div class="mb-4">
-                  <div class="flex space-x-1">
-                    <i class="ri-star-fill text-sand-dark text-sm"></i
-                    ><i class="ri-star-fill text-sand-dark text-sm"></i
-                    ><i class="ri-star-fill text-sand-dark text-sm"></i
-                    ><i class="ri-star-fill text-sand-dark text-sm"></i
-                    ><i class="ri-star-fill text-sand-dark text-sm"></i>
-                  </div>
-                </div>
-                <p
-                  class="text-sm text-forest/75 leading-relaxed"
-                  style="font-family: &quot;Nunito Sans&quot;, sans-serif"
-                >
-                  “A cura multidimensional arcturiana abriu portas que eu nem
-                  sabia que existiam. Sinto que finalmente estou conectada com
-                  meu propósito de vida. Uma experiência verdadeiramente
-                  transcendental.”
-                </p>
+              <div class="break-inside-avoid mb-6">
+                <img
+                  src="assets/img/avaliacoes/WhatsApp Image 2026-03-16 at 18.01.39.jpeg"
+                  alt="Depoimento 3"
+                  class="w-full rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 hover:scale-[1.02]"
+                  loading="lazy"
+                />
               </div>
-              <div
-                class="bg-white rounded-2xl p-8 shadow-md hover:shadow-lg transition-all duration-500 hover:-translate-y-1"
-              >
-                <div class="flex items-center mb-6">
-                  <div
-                    class="w-14 h-14 bg-sage/15 rounded-full flex items-center justify-center mr-4"
-                  >
-                    <i class="ri-user-star-line text-2xl text-forest"></i>
-                  </div>
-                  <div>
-                    <h3
-                      class="text-base font-semibold text-forest"
-                      style="font-family: &quot;Nunito Sans&quot;, sans-serif"
-                    >
-                      Roberto Mendes
-                    </h3>
-                    <p
-                      class="text-xs text-sage"
-                      style="font-family: &quot;Nunito Sans&quot;, sans-serif"
-                    >
-                      Shiatsu com Pedras Quentes
-                    </p>
-                  </div>
-                </div>
-                <div class="mb-4">
-                  <div class="flex space-x-1">
-                    <i class="ri-star-fill text-sand-dark text-sm"></i
-                    ><i class="ri-star-fill text-sand-dark text-sm"></i
-                    ><i class="ri-star-fill text-sand-dark text-sm"></i
-                    ><i class="ri-star-fill text-sand-dark text-sm"></i
-                    ><i class="ri-star-fill text-sand-dark text-sm"></i>
-                  </div>
-                </div>
-                <p
-                  class="text-sm text-forest/75 leading-relaxed"
-                  style="font-family: &quot;Nunito Sans&quot;, sans-serif"
-                >
-                  “O shiatsu com pedras quentes é uma experiência única. O calor
-                  das pedras combinado com a pressão nos meridianos dissolve
-                  toda a tensão acumulada. Saio renovado a cada sessão.”
-                </p>
+              <div class="break-inside-avoid mb-6">
+                <img
+                  src="assets/img/avaliacoes/WhatsApp Image 2026-03-16 at 18.02.26.jpeg"
+                  alt="Depoimento 4"
+                  class="w-full rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 hover:scale-[1.02]"
+                  loading="lazy"
+                />
               </div>
-              <div
-                class="bg-white rounded-2xl p-8 shadow-md hover:shadow-lg transition-all duration-500 hover:-translate-y-1"
-              >
-                <div class="flex items-center mb-6">
-                  <div
-                    class="w-14 h-14 bg-sage/25 rounded-full flex items-center justify-center mr-4"
-                  >
-                    <i class="ri-user-smile-line text-2xl text-forest"></i>
-                  </div>
-                  <div>
-                    <h3
-                      class="text-base font-semibold text-forest"
-                      style="font-family: &quot;Nunito Sans&quot;, sans-serif"
-                    >
-                      Juliana Campos
-                    </h3>
-                    <p
-                      class="text-xs text-sage"
-                      style="font-family: &quot;Nunito Sans&quot;, sans-serif"
-                    >
-                      Psicoterapia Reencarnacionista
-                    </p>
-                  </div>
-                </div>
-                <div class="mb-4">
-                  <div class="flex space-x-1">
-                    <i class="ri-star-fill text-sand-dark text-sm"></i
-                    ><i class="ri-star-fill text-sand-dark text-sm"></i
-                    ><i class="ri-star-fill text-sand-dark text-sm"></i
-                    ><i class="ri-star-fill text-sand-dark text-sm"></i
-                    ><i class="ri-star-fill text-sand-dark text-sm"></i>
-                  </div>
-                </div>
-                <p
-                  class="text-sm text-forest/75 leading-relaxed"
-                  style="font-family: &quot;Nunito Sans&quot;, sans-serif"
-                >
-                  “A psicoterapia reencarnacionista me ajudou a compreender
-                  padrões que se repetiam na minha vida. Entender minhas vidas
-                  passadas trouxe clareza e cura para traumas que eu carregava
-                  sem saber.”
-                </p>
+              <div class="break-inside-avoid mb-6">
+                <img
+                  src="assets/img/avaliacoes/WhatsApp Image 2026-03-16 at 17.59.58.jpeg"
+                  alt="Depoimento 5"
+                  class="w-full rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 hover:scale-[1.02]"
+                  loading="lazy"
+                />
               </div>
-              <div
-                class="bg-white rounded-2xl p-8 shadow-md hover:shadow-lg transition-all duration-500 hover:-translate-y-1"
-              >
-                <div class="flex items-center mb-6">
-                  <div
-                    class="w-14 h-14 bg-sage/20 rounded-full flex items-center justify-center mr-4"
-                  >
-                    <i class="ri-user-line text-2xl text-forest"></i>
-                  </div>
-                  <div>
-                    <h3
-                      class="text-base font-semibold text-forest"
-                      style="font-family: &quot;Nunito Sans&quot;, sans-serif"
-                    >
-                      Pedro Henrique
-                    </h3>
-                    <p
-                      class="text-xs text-sage"
-                      style="font-family: &quot;Nunito Sans&quot;, sans-serif"
-                    >
-                      Radiestesia
-                    </p>
-                  </div>
-                </div>
-                <div class="mb-4">
-                  <div class="flex space-x-1">
-                    <i class="ri-star-fill text-sand-dark text-sm"></i
-                    ><i class="ri-star-fill text-sand-dark text-sm"></i
-                    ><i class="ri-star-fill text-sand-dark text-sm"></i
-                    ><i class="ri-star-fill text-sand-dark text-sm"></i
-                    ><i class="ri-star-fill text-sand-dark text-sm"></i>
-                  </div>
-                </div>
-                <p
-                  class="text-sm text-forest/75 leading-relaxed"
-                  style="font-family: &quot;Nunito Sans&quot;, sans-serif"
-                >
-                  “As sessões de radiestesia com mesa radiônica identificaram
-                  desequilíbrios que nenhum exame convencional detectou. Após o
-                  tratamento, minha energia vital se restaurou completamente.”
-                </p>
+              <div class="break-inside-avoid mb-6">
+                <img
+                  src="assets/img/avaliacoes/WhatsApp Image 2026-03-16 at 18.03.43.jpeg"
+                  alt="Depoimento 6"
+                  class="w-full rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 hover:scale-[1.02]"
+                  loading="lazy"
+                />
               </div>
+              <div class="break-inside-avoid mb-6">
+                <img
+                  src="assets/img/avaliacoes/WhatsApp Image 2026-03-16 at 17.58.26.jpeg"
+                  alt="Depoimento 7"
+                  class="w-full rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 hover:scale-[1.02]"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="flex justify-center mt-12">
+              <a
+                href="https://www.google.com/search?q=Terapeuta+Joana+F%C3%A1vero"
+                target="_blank"
+                class="group px-8 py-4 bg-forest text-cream rounded-full text-sm font-medium hover:bg-forest/90 transition-all inline-flex items-center justify-center space-x-2 whitespace-nowrap cursor-pointer shadow-lg hover:shadow-xl"
+                style="font-family: 'Nunito Sans', sans-serif"
+              >
+                <span>Ver mais Avaliações</span>
+                <i class="ri-external-link-line text-lg group-hover:translate-x-1 transition-transform"></i>
+              </a>
             </div>
           </div>
         </section>

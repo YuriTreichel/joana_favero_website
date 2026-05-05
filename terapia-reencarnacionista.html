@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terapia Reencarnacionista e Sistêmica Familiar - Joana Favero</title>
+    <meta
+      name="description"
+      content="Tratamento terapêutico profundo que busca na raiz ancestral e nas vivências passadas a cura para os bloqueios e repetições do presente."
+    />
+    
+    <!-- Remix Icon -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&amp;family=Nunito+Sans:wght@300;400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" crossorigin="" href="assets/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              forest: '#455043',
+              sage: '#b8c2b6',
+              cream: '#f5f4f2',
+              sand: '#d2b48c',
+            }
+          }
+        }
+      }
+    </script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .bg-forest { @apply bg-[#455043]; }
+        .text-forest { @apply text-[#455043]; }
+        .bg-sage { @apply bg-[#b8c2b6]; }
+        .text-sage { @apply text-[#b8c2b6]; }
+        .bg-cream { @apply bg-[#f5f4f2]; }
+        .text-cream { @apply text-[#f5f4f2]; }
+      }
+    </style>
+    <style>
+      section {
+        scroll-margin-top: 6rem !important;
+      }
+    </style>
+  </head>
+  <body class="bg-cream">
+    <div id="root">
+      <div class="min-h-screen">
+        <!-- Navigation -->
+        <nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-forest shadow-lg">
+          <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+              <a href="index.html" class="flex items-center gap-2 z-50">
+                <img src="assets/img/logotipo.png" alt="Joana Fávero Logotipo" class="h-14 md:h-[70px] w-auto brightness-0 invert" />
+              </a>
+              <div class="hidden md:flex items-center space-x-10">
+                <a href="index.html#home" class="text-sm font-normal transition-colors cursor-pointer text-white/90 hover:text-sage" style="font-family: 'Nunito Sans', sans-serif">Início</a>
+                <a href="index.html#about" class="text-sm font-normal transition-colors cursor-pointer text-white/90 hover:text-sage" style="font-family: 'Nunito Sans', sans-serif">Sobre</a>
+                <a href="index.html#services" class="text-sm font-normal transition-colors cursor-pointer text-white/90 hover:text-sage" style="font-family: 'Nunito Sans', sans-serif">Terapias</a>
+                <a href="index.html#testimonials" class="text-sm font-normal transition-colors cursor-pointer text-white/90 hover:text-sage" style="font-family: 'Nunito Sans', sans-serif">Depoimentos</a>
+                <a href="#contact" class="text-sm font-normal transition-colors cursor-pointer text-white/90 hover:text-sage" style="font-family: 'Nunito Sans', sans-serif">Contato</a>
+              </div>
+              <a href="#contact" class="hidden md:block px-6 py-2.5 rounded-full text-sm font-medium transition-all whitespace-nowrap cursor-pointer bg-white/15 text-white border border-white/30 hover:bg-white/25 backdrop-blur-sm" style="font-family: 'Nunito Sans', sans-serif">
+                Agendar Sessão
+              </a>
+              <button class="md:hidden w-10 h-10 flex items-center justify-center cursor-pointer text-white" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                <i class="ri-menu-line text-2xl"></i>
+              </button>
+            </div>
+          </div>
+          <!-- Mobile Menu -->
+          <div id="mobile-menu" class="md:hidden hidden bg-forest absolute top-full left-0 w-full shadow-lg border-t border-white/10">
+            <div class="px-6 py-4 flex flex-col space-y-4">
+              <a href="index.html#home" class="text-white/90 hover:text-sage text-base py-2 transition-colors" style="font-family: 'Nunito Sans', sans-serif">Início</a>
+              <a href="index.html#about" class="text-white/90 hover:text-sage text-base py-2 transition-colors" style="font-family: 'Nunito Sans', sans-serif">Sobre</a>
+              <a href="index.html#services" class="text-white/90 hover:text-sage text-base py-2 transition-colors" style="font-family: 'Nunito Sans', sans-serif">Terapias</a>
+              <a href="index.html#testimonials" class="text-white/90 hover:text-sage text-base py-2 transition-colors" style="font-family: 'Nunito Sans', sans-serif">Depoimentos</a>
+              <a href="#contact" class="text-white/90 hover:text-sage text-base py-2 transition-colors" style="font-family: 'Nunito Sans', sans-serif">Contato</a>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="relative pt-32 pb-20 bg-forest overflow-hidden">
+          <div class="absolute inset-0 opacity-20">
+            <img src="assets/img/terapia_reencarnacionista.png" alt="Background" class="w-full h-full object-cover" />
+          </div>
+          <div class="max-w-7xl mx-auto px-6 relative z-10 text-center">
+            <div class="inline-block mb-6">
+              <span class="text-xs uppercase tracking-[0.2em] text-sage font-medium bg-white/10 px-4 py-2 rounded-full" style="font-family: 'Nunito Sans', sans-serif">Cura Ancestral e Sistêmica</span>
+            </div>
+            <h1 class="text-4xl md:text-6xl text-white leading-tight mb-8" style="font-family: 'Cormorant Garamond', serif; font-weight: 400;">
+              Terapia Reencarnacionista e <span class="italic text-sage">Sistêmica Familiar</span>
+            </h1>
+            <p class="text-lg md:text-xl text-white/80 max-w-3xl mx-auto leading-relaxed" style="font-family: 'Nunito Sans', sans-serif; font-weight: 300;">
+              Tratamento terapêutico profundo que busca na raiz ancestral e nas vivências passadas a cura para os bloqueios e repetições do presente, promovendo libertação e paz.
+            </p>
+          </div>
+        </section>
+
+        <!-- Intro Section (White) -->
+        <section class="py-32 bg-white">
+          <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-4xl md:text-5xl text-forest mb-10 leading-tight" style="font-family: 'Cormorant Garamond', serif;">Uma visão além da personalidade atual</h2>
+            <p class="text-xl text-forest/70 leading-relaxed" style="font-family: 'Nunito Sans', sans-serif;">
+              A Terapia Reencarnacionista e Sistêmica Familiar é um convite para olhar para a sua vida sob a ótica da sua Alma, compreendendo os aprendizados por trás dos seus maiores desafios.
+            </p>
+          </div>
+        </section>
+
+        <!-- Details Section (Full Width Cream) -->
+        <section class="py-24 bg-cream relative">
+          <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-20 items-center">
+              <div class="space-y-10">
+                <h3 class="text-3xl md:text-5xl text-forest leading-tight" style="font-family: 'Cormorant Garamond', serif;">Libertação de Padrões</h3>
+                <p class="text-lg text-forest/70 leading-relaxed" style="font-family: 'Nunito Sans', sans-serif;">
+                  Muitas vezes, as dificuldades que enfrentamos hoje têm raízes em dinâmicas familiares profundas ou em registros de vivências passadas que ainda ressoam em nosso campo vibracional.
+                </p>
+                <div class="bg-white p-10 rounded-[2.5rem] shadow-xl space-y-6">
+                  <h4 class="text-2xl text-forest" style="font-family: 'Cormorant Garamond', serif;">O que trabalhamos:</h4>
+                  <ul class="space-y-4">
+                    <li class="flex items-center gap-4 text-forest/80">
+                      <div class="w-2 h-2 bg-sage rounded-full"></div>
+                      <span>Repetições de destinos familiares</span>
+                    </li>
+                    <li class="flex items-center gap-4 text-forest/80">
+                      <div class="w-2 h-2 bg-sage rounded-full"></div>
+                      <span>Fobias e medos sem explicação aparente</span>
+                    </li>
+                    <li class="flex items-center gap-4 text-forest/80">
+                      <div class="w-2 h-2 bg-sage rounded-full"></div>
+                      <span>Dificuldades em relacionamentos afetivos</span>
+                    </li>
+                    <li class="flex items-center gap-4 text-forest/80">
+                      <div class="w-2 h-2 bg-sage rounded-full"></div>
+                      <span>Sentimentos de culpa ou solidão profunda</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="relative">
+                <div class="aspect-[4/5] rounded-[3rem] overflow-hidden shadow-2xl">
+                  <img src="assets/img/terapia_reencarnacionista.png" alt="Terapia Reencarnacionista" class="w-full h-full object-cover" />
+                </div>
+                <div class="absolute -bottom-10 -right-10 bg-forest text-white p-10 rounded-3xl shadow-2xl max-w-xs hidden md:block">
+                  <p class="text-lg italic" style="font-family: 'Cormorant Garamond', serif;">"O objetivo não é apenas curiosidade sobre o passado, mas a cura no presente."</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Journey Section (Full Width Forest) -->
+        <section class="py-32 bg-forest text-white">
+          <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-24">
+              <h2 class="text-4xl md:text-6xl mb-8 leading-tight" style="font-family: 'Cormorant Garamond', serif;">A Jornada de Transformação</h2>
+              <p class="text-white/60 text-xl">Um caminho estruturado para o seu despertar.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-16">
+              <div class="relative p-10 bg-white/5 rounded-3xl border border-white/10 group hover:bg-white/10 transition-all">
+                <div class="w-16 h-16 bg-sage text-forest rounded-2xl flex items-center justify-center text-2xl font-bold mb-8 transition-transform group-hover:rotate-6">01</div>
+                <h4 class="text-2xl mb-4" style="font-family: 'Cormorant Garamond', serif;">Acolhimento</h4>
+                <p class="text-white/60 leading-relaxed">Entendimento profundo da sua queixa atual e preparação do campo energético para o trabalho.</p>
+              </div>
+              <div class="relative p-10 bg-white/5 rounded-3xl border border-white/10 group hover:bg-white/10 transition-all">
+                <div class="w-16 h-16 bg-sage text-forest rounded-2xl flex items-center justify-center text-2xl font-bold mb-8 transition-transform group-hover:rotate-6">02</div>
+                <h4 class="text-2xl mb-4" style="font-family: 'Cormorant Garamond', serif;">Investigação</h4>
+                <p class="text-white/60 leading-relaxed">Busca pela raiz sistêmica ou reencarnacionista através de diálogo ou regressão ética e segura.</p>
+              </div>
+              <div class="relative p-10 bg-white/5 rounded-3xl border border-white/10 group hover:bg-white/10 transition-all">
+                <div class="w-16 h-16 bg-sage text-forest rounded-2xl flex items-center justify-center text-2xl font-bold mb-8 transition-transform group-hover:rotate-6">03</div>
+                <h4 class="text-2xl mb-4" style="font-family: 'Cormorant Garamond', serif;">Resolução</h4>
+                <p class="text-white/60 leading-relaxed">Limpeza, ressignificação e reposicionamento consciente diante da sua própria história.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Final CTA (White Background) -->
+        <section class="py-32 bg-white">
+          <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-4xl md:text-5xl text-forest mb-8 leading-tight" style="font-family: 'Cormorant Garamond', serif;">Dê o primeiro passo para sua libertação</h2>
+            <p class="text-xl text-forest/70 mb-12" style="font-family: 'Nunito Sans', sans-serif;">
+              Agende uma consulta para iniciarmos este processo profundo de cura e compreensão sob a ótica da sua Alma.
+            </p>
+            <a href="#contact" class="inline-flex items-center gap-4 bg-forest text-white px-12 py-6 rounded-full text-xl font-bold hover:bg-forest/90 transition-all shadow-xl group">
+              <span>Agendar minha sessão</span>
+              <i class="ri-whatsapp-line text-2xl group-hover:scale-110 transition-transform"></i>
+            </a>
+          </div>
+        </section>
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-24 bg-cream">
+          <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+              <div>
+                <h2 class="text-4xl text-forest mb-6" style="font-family: 'Cormorant Garamond', serif;">Inicie sua jornada de cura</h2>
+                <p class="text-lg text-forest/70 mb-8 leading-relaxed" style="font-family: 'Nunito Sans', sans-serif;">
+                  Preencha o formulário abaixo ou entre em contato diretamente pelo WhatsApp para agendarmos sua sessão.
+                </p>
+                <div class="space-y-6">
+                  <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-forest shadow-sm">
+                      <i class="ri-whatsapp-line text-2xl"></i>
+                    </div>
+                    <div>
+                      <p class="text-xs text-forest/40 uppercase tracking-widest">WhatsApp</p>
+                      <p class="text-forest font-medium">(11) 98765-4321</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-forest shadow-sm">
+                      <i class="ri-mail-line text-2xl"></i>
+                    </div>
+                    <div>
+                      <p class="text-xs text-forest/40 uppercase tracking-widest">E-mail</p>
+                      <p class="text-forest font-medium">contato@joanafavero.com.br</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white p-8 md:p-12 rounded-3xl shadow-xl">
+                <form class="space-y-5">
+                  <input type="text" placeholder="Seu nome completo" class="w-full px-5 py-4 bg-cream/50 border-none rounded-xl text-forest focus:ring-2 focus:ring-sage transition-all" />
+                  <input type="email" placeholder="Seu e-mail" class="w-full px-5 py-4 bg-cream/50 border-none rounded-xl text-forest focus:ring-2 focus:ring-sage transition-all" />
+                  <input type="tel" placeholder="Seu telefone" class="w-full px-5 py-4 bg-cream/50 border-none rounded-xl text-forest focus:ring-2 focus:ring-sage transition-all" />
+                  <textarea placeholder="Como posso te ajudar?" rows="4" class="w-full px-5 py-4 bg-cream/50 border-none rounded-xl text-forest focus:ring-2 focus:ring-sage transition-all resize-none"></textarea>
+                  <button type="submit" class="w-full py-5 bg-forest text-white rounded-xl font-bold hover:bg-forest/90 transition-all shadow-lg">Enviar Mensagem</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-forest">
+          <div class="max-w-7xl mx-auto px-6 py-16">
+            <div class="grid md:grid-cols-12 gap-12 mb-16">
+              <div class="md:col-span-5">
+                <div class="flex items-center space-x-3 mb-6">
+                  <img src="assets/img/logotipo.png" alt="Joana Favero Logotipo" class="h-14 md:h-[70px] w-auto brightness-0 invert" />
+                </div>
+                <p
+                  class="text-sm text-cream/60 mb-8 leading-relaxed"
+                  style="font-family: 'Nunito Sans', sans-serif"
+                >
+                  Terapias integrativas para reconectar corpo, mente
+                  e espírito com acolhimento profundo e jornadas de autodescoberta.
+                </p>
+                <a
+                  href="#contact"
+                  class="px-6 py-3 bg-sage text-forest rounded-full text-sm font-medium hover:bg-sage/80 transition-all inline-flex items-center space-x-2 whitespace-nowrap cursor-pointer"
+                  style="font-family: 'Nunito Sans', sans-serif"
+                >
+                  <span>Agendar Sessão</span><i class="ri-arrow-right-line"></i>
+                </a>
+              </div>
+              <div class="md:col-span-3">
+                <h4
+                  class="text-sm font-semibold mb-6 text-sage"
+                  style="font-family: 'Nunito Sans', sans-serif"
+                >
+                  Navegação
+                </h4>
+                <ul class="space-y-4">
+                  <li>
+                    <a
+                      href="index.html#home"
+                      class="text-sm text-cream/80 hover:text-sage transition-colors cursor-pointer"
+                      style="font-family: 'Nunito Sans', sans-serif"
+                      >Início</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="index.html#about"
+                      class="text-sm text-cream/80 hover:text-sage transition-colors cursor-pointer"
+                      style="font-family: 'Nunito Sans', sans-serif"
+                      >Sobre</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="index.html#services"
+                      class="text-sm text-cream/80 hover:text-sage transition-colors cursor-pointer"
+                      style="font-family: 'Nunito Sans', sans-serif"
+                      >Terapias</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="index.html#testimonials"
+                      class="text-sm text-cream/80 hover:text-sage transition-colors cursor-pointer"
+                      style="font-family: 'Nunito Sans', sans-serif"
+                      >Depoimentos</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#contact"
+                      class="text-sm text-cream/80 hover:text-sage transition-colors cursor-pointer"
+                      style="font-family: 'Nunito Sans', sans-serif"
+                      >Contato</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="md:col-span-4">
+                <h4
+                  class="text-sm font-semibold mb-6 text-sage"
+                  style="font-family: 'Nunito Sans', sans-serif"
+                >
+                  Terapias
+                </h4>
+                <ul class="space-y-3 mb-8">
+                  <li>
+                    <a
+                      href="terapia-reencarnacionista.html"
+                      class="text-sm text-cream/80 hover:text-sage transition-colors cursor-pointer flex items-center"
+                      style="font-family: 'Nunito Sans', sans-serif"
+                      ><i class="ri-leaf-line text-xs text-sage mr-2"></i
+                      >Terapia Reencarnacionista e Sistêmica Familiar</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="mesa-radionica.html"
+                      class="text-sm text-cream/80 hover:text-sage transition-colors cursor-pointer flex items-center"
+                      style="font-family: 'Nunito Sans', sans-serif"
+                      ><i class="ri-leaf-line text-xs text-sage mr-2"></i
+                      >Mesa Radiônica Almaterapia</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="mapa-numerologico.html"
+                      class="text-sm text-cream/80 hover:text-sage transition-colors cursor-pointer flex items-center"
+                      style="font-family: 'Nunito Sans', sans-serif"
+                      ><i class="ri-leaf-line text-xs text-sage mr-2"></i
+                      >Mapa Numerológico</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="terapia-floral.html"
+                      class="text-sm text-cream/80 hover:text-sage transition-colors cursor-pointer flex items-center"
+                      style="font-family: 'Nunito Sans', sans-serif"
+                      ><i class="ri-leaf-line text-xs text-sage mr-2"></i
+                      >Terapia Floral</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="reiki.html"
+                      class="text-sm text-cream/80 hover:text-sage transition-colors cursor-pointer flex items-center"
+                      style="font-family: 'Nunito Sans', sans-serif"
+                      ><i class="ri-leaf-line text-xs text-sage mr-2"></i
+                      >Reiki</a
+                    >
+                  </li>
+                </ul>
+                <h4
+                  class="text-sm font-semibold mb-4 text-sage"
+                  style="font-family: 'Nunito Sans', sans-serif"
+                >
+                  Contato
+                </h4>
+                <div class="space-y-2">
+                  <p
+                    class="text-sm text-cream/80"
+                    style="font-family: 'Nunito Sans', sans-serif"
+                  >
+                    (11) 98765-4321
+                  </p>
+                  <p
+                    class="text-sm text-cream/80"
+                    style="font-family: 'Nunito Sans', sans-serif"
+                  >
+                    contato@joanafavero.com.br
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0"
+            >
+              <div class="flex space-x-6">
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="text-sm text-cream/60 hover:text-sage transition-colors cursor-pointer"
+                  style="font-family: 'Nunito Sans', sans-serif"
+                  >Instagram</a
+                ><a
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="text-sm text-cream/60 hover:text-sage transition-colors cursor-pointer"
+                  style="font-family: 'Nunito Sans', sans-serif"
+                  >Facebook</a
+                ><a
+                  href="https://wa.me/5511987654321"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="text-sm text-cream/60 hover:text-sage transition-colors cursor-pointer"
+                  style="font-family: 'Nunito Sans', sans-serif"
+                  >WhatsApp</a
+                >
+              </div>
+              <p
+                class="text-sm text-cream/40"
+                style="font-family: 'Nunito Sans', sans-serif"
+              >
+                © 2026 Joana Favero. Todos os direitos reservados.
+              </p>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="assets/scripts.js?v=2"></script>
+  </body>
+</html>

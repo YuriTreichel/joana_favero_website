@@ -1297,3 +1297,98 @@ html {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
+
+/* Premium Mobile Menu Overlay */
+.mobile-menu-overlay {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(69, 80, 67, 0.98); /* forest with high opacity */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 40;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-menu-overlay nav {
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+}
+
+.mobile-menu-overlay .mobile-link {
+  display: block;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2rem;
+  color: #f5f4f2;
+  padding: 1rem 0;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu-overlay.active .mobile-link {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered animation for links */
+.mobile-menu-overlay.active .mobile-link:nth-child(1) { transition-delay: 0.1s; }
+.mobile-menu-overlay.active .mobile-link:nth-child(2) { transition-delay: 0.2s; }
+.mobile-menu-overlay.active .mobile-link:nth-child(3) { transition-delay: 0.3s; }
+.mobile-menu-overlay.active .mobile-link:nth-child(4) { transition-delay: 0.4s; }
+.mobile-menu-overlay.active .mobile-link:nth-child(5) { transition-delay: 0.5s; }
+.mobile-menu-overlay.active .mobile-link:nth-child(6) { transition-delay: 0.6s; }
+
+.mobile-menu-overlay .mobile-cta {
+  margin-top: 2rem;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1rem;
+}
+
+/* Hamburger animation */
+.menu-icon {
+  position: relative;
+  width: 24px;
+  height: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu-icon span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: currentColor;
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+.menu-icon.active span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu-icon.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-icon.active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+body.menu-open {
+  overflow: hidden;
+}

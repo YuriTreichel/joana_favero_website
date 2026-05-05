@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jornada R.E.S.S.O.A.R™ - Joana Favero</title>
+    <meta name="description" content="Acesse a raiz dos seus bloqueios emocionais e energéticos através da Jornada R.E.S.S.O.A.R™. Transformação profunda para mulheres que buscam leveza e clareza." />
+    
+    <!-- Remix Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Nunito+Sans:wght@200;300;400;600;700&display=swap" rel="stylesheet" />
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              forest: "#455043",
+              sage: "#b8c2b6",
+              cream: "#f5f4f2",
+              sand: "#d2b48c",
+            },
+            fontFamily: {
+              serif: ["Cormorant Garamond", "serif"],
+              sans: ["Nunito Sans", "sans-serif"],
+            },
+            animation: {
+              'slow-zoom': 'slowZoom 20s linear infinite alternate',
+            },
+            keyframes: {
+              slowZoom: {
+                '0%': { transform: 'scale(1)' },
+                '100%': { transform: 'scale(1.1)' },
+              }
+            }
+          },
+        },
+      };
+    </script>
+
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .reveal {
+          opacity: 0;
+          transform: translateY(30px);
+          transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .reveal.active {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="assets/style.css?v=3" />
+  </head>
+  <body class="bg-cream selection:bg-sage/30">
+    <div id="root">
+      <div class="min-h-screen">
+        <!-- Navigation -->
+        <nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-transparent">
+          <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+              <a href="index.html" class="flex items-center gap-2 z-50">
+                <img src="assets/img/logotipo.png" alt="Joana Fávero Logotipo" class="h-14 md:h-[70px] w-auto" />
+              </a>
+              <div class="hidden md:flex items-center space-x-10">
+                <a href="index.html#home" class="text-sm font-normal transition-colors cursor-pointer text-white/90 hover:text-sand font-sans">Início</a>
+                <a href="index.html#about" class="text-sm font-normal transition-colors cursor-pointer text-white/90 hover:text-sand font-sans">Sobre</a>
+                <a href="index.html#services" class="text-sm font-normal transition-colors cursor-pointer text-white/90 hover:text-sand font-sans">Terapias</a>
+                <a href="jornada-ressoar.html" class="text-sm font-bold transition-colors cursor-pointer text-sand font-sans">Jornada R.E.S.S.O.A.R™</a>
+                <a href="index.html#contact" class="text-sm font-normal transition-colors cursor-pointer text-white/90 hover:text-sand font-sans">Contato</a>
+              </div>
+              <div class="flex items-center space-x-4">
+                <a href="https://wa.me/5511987654321" target="_blank" class="hidden md:block px-8 py-2.5 rounded-full text-sm font-medium transition-all whitespace-nowrap cursor-pointer bg-white/15 text-white border border-white/30 hover:bg-white/25 backdrop-blur-sm font-sans">
+                  Agendar Sessão
+                </a>
+                <button class="md:hidden w-10 h-10 flex items-center justify-center cursor-pointer text-white z-50" aria-label="Menu">
+                  <div class="menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modern Mobile Menu Overlay -->
+          <div id="mobile-menu" class="mobile-menu-overlay hidden">
+            <nav class="flex flex-col items-center">
+              <a href="index.html#home" class="mobile-link">Início</a>
+              <a href="index.html#about" class="mobile-link">Sobre</a>
+              <a href="index.html#services" class="mobile-link">Terapias</a>
+              <a href="jornada-ressoar.html" class="mobile-link">Jornada R.E.S.S.O.A.R™</a>
+              <a href="index.html#contact" class="mobile-link">Contato</a>
+              <a href="https://wa.me/5511987654321" target="_blank" class="mobile-cta px-8 py-4 bg-sage text-forest rounded-full font-medium mt-8">
+                Agendar Sessão
+              </a>
+            </nav>
+          </div>
+        </nav>
+
+      <!-- Hero Section -->
+      <section class="relative min-h-[90vh] flex items-center pt-32 pb-20 overflow-hidden bg-forest">
+        <div class="absolute inset-0 z-0">
+          <img src="assets/img/mesa_almaterapia.png" alt="" class="w-full h-full object-cover opacity-20 animate-slow-zoom" />
+          <div class="absolute inset-0 bg-gradient-to-b from-forest/80 via-forest/40 to-forest"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-6 relative z-10 text-center">
+          <div class="reveal">
+            <span class="inline-block px-5 py-2 rounded-full bg-white/5 text-sage text-[10px] tracking-[0.3em] uppercase font-bold mb-8 border border-white/10 font-sans">
+              Transformação Profunda
+            </span>
+            <h1 class="text-5xl md:text-8xl text-white leading-[1.1] mb-8 font-serif font-light italic">
+              Quando você cura a <span class="text-sage font-medium not-italic">raiz</span>,<br class="hidden md:block"> toda a sua vida começa a fluir
+            </h1>
+            <p class="text-lg md:text-2xl text-white/70 max-w-3xl mx-auto leading-relaxed mb-12 font-sans font-light">
+              Através da Jornada R.E.S.S.O.A.R™, você acessa a raiz dos seus bloqueios emocionais e energéticos, rompe padrões repetitivos e começa a viver com mais leveza, clareza e direção.
+            </p>
+            
+            <div class="flex flex-col md:flex-row items-center justify-center gap-10 mb-16">
+              <div class="flex items-center gap-4 text-sage/80">
+                <div class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center border border-white/10">
+                  <i class="ri-heart-pulse-line text-lg"></i>
+                </div>
+                <span class="text-[10px] tracking-widest uppercase font-bold font-sans">Transformação Emocional</span>
+              </div>
+              <div class="flex items-center gap-4 text-sage/80">
+                <div class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center border border-white/10">
+                  <i class="ri-map-pin-2-line text-lg"></i>
+                </div>
+                <span class="text-[10px] tracking-widest uppercase font-bold font-sans">Bento Gonçalves & Online</span>
+              </div>
+            </div>
+
+            <a href="https://wa.me/5511987654321" target="_blank" class="inline-flex items-center gap-6 bg-[#5d6b5b] text-white px-12 py-6 rounded-full text-xs tracking-[0.2em] uppercase font-bold hover:bg-[#6e7d6c] transition-all shadow-2xl group font-sans">
+              <span>Agendar minha jornada</span>
+              <i class="ri-whatsapp-line text-2xl group-hover:scale-110 transition-transform"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Connection Section -->
+      <section class="py-32 md:py-48 bg-white relative">
+        <div class="max-w-5xl mx-auto px-6 relative z-10">
+          <div class="reveal text-center mb-24">
+            <h2 class="text-4xl md:text-6xl text-forest leading-tight mb-8 font-serif font-light italic">
+              Você já percebeu que, por mais que tente mudar, algumas emoções e situações continuam se repetindo?
+            </h2>
+          </div>
+          
+          <div class="grid md:grid-cols-2 gap-20 items-center">
+              <div class="space-y-10 text-xl text-forest/70 leading-relaxed font-sans font-light reveal">
+                <p>Você tenta entender… se esforça… busca respostas… mas, no fundo, sente que algo mais profundo ainda te prende.</p>
+                <div class="pl-8 border-l-2 border-sage/40">
+                  <p class="font-serif text-3xl italic text-forest leading-snug">E isso cansa.</p>
+                </div>
+                <p>Ansiedade, sobrecarga emocional, relações difíceis ou a sensação de estar desconectada de si mesma não surgem por acaso.</p>
+              </div>
+              <div class="relative reveal" style="transition-delay: 200ms;">
+                <div class="bg-cream p-12 md:p-16 rounded-[4rem] relative z-10 shadow-sm border border-forest/5">
+                  <div class="absolute top-0 right-0 p-8 text-sage/20">
+                    <i class="ri-double-quotes-r text-8xl"></i>
+                  </div>
+                  <p class="text-3xl md:text-4xl text-forest leading-relaxed relative z-10 italic font-serif font-light">
+                    "Existe uma raiz. E é nela que a verdadeira <span class="font-bold not-italic border-b-2 border-sage">transformação</span> acontece."
+                  </p>
+                </div>
+                <div class="absolute -bottom-6 -right-6 w-full h-full border-2 border-sage/10 rounded-[4rem] -z-10"></div>
+              </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Possibility Section -->
+      <section class="py-32 bg-cream/30 relative overflow-hidden">
+        <div class="max-w-5xl mx-auto px-6 text-center relative z-10">
+          <div class="reveal">
+            <h3 class="text-4xl md:text-6xl text-forest mb-20 leading-tight font-serif font-light italic">
+              E se você pudesse transformar o que está na origem de tudo isso?
+            </h3>
+          </div>
+          
+          <div class="grid md:grid-cols-3 gap-8">
+            <div class="p-10 bg-white rounded-[3rem] shadow-sm border border-sage/10 reveal">
+              <div class="text-sage mb-6"><i class="ri-leaf-line text-3xl"></i></div>
+              <p class="text-forest/60 font-bold tracking-widest uppercase text-[10px] font-sans">Sem fórmulas prontas</p>
+            </div>
+            <div class="p-10 bg-white rounded-[3rem] shadow-sm border border-sage/10 reveal" style="transition-delay: 150ms;">
+              <div class="text-sage mb-6"><i class="ri-windy-line text-3xl"></i></div>
+              <p class="text-forest/60 font-bold tracking-widest uppercase text-[10px] font-sans">No seu ritmo</p>
+            </div>
+            <div class="p-10 bg-white rounded-[3rem] shadow-sm border border-sage/10 reveal" style="transition-delay: 300ms;">
+              <div class="text-sage mb-6"><i class="ri-sparkling-2-line text-3xl"></i></div>
+              <p class="text-forest/60 font-bold tracking-widest uppercase text-[10px] font-sans">Mudança real</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. APRESENTAÇÃO DA JORNADA -->
+      <section class="py-48 bg-forest text-white relative">
+        <div class="absolute inset-0 overflow-hidden">
+          <div class="absolute top-0 right-0 w-1/3 h-full bg-white/[0.02] transform skew-x-12 translate-x-1/2"></div>
+        </div>
+        <div class="max-w-5xl mx-auto px-6 text-center relative z-10">
+          <div class="reveal">
+            <span class="text-sage text-xs tracking-[0.4em] uppercase font-semibold mb-8 block">Apresentando a</span>
+            <h2 class="text-6xl md:text-9xl mb-12 font-light italic">
+              Jornada <span class="italic text-sage not-italic font-medium">R.E.S.S.O.A.R™</span>
+            </h2>
+          </div>
+          <div class="reveal">
+            <p class="text-xl md:text-3xl text-white/70 leading-relaxed max-w-3xl mx-auto font-light">
+              Um acompanhamento terapêutico profundo, exclusivo e personalizado, criado para conduzir você a uma transformação real — emocional, energética e sistêmica.
+            </p>
+          </div>
+          <div class="reveal mt-16">
+            <div class="inline-block p-1 bg-white/10 rounded-full mb-8"></div>
+            <p class="text-3xl md:text-4xl text-sage italic font-light max-w-2xl mx-auto">
+              "Um processo onde você não apenas entende… mas começa a sentir a mudança acontecendo dentro de você."
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. O MÉTODO -->
+      <section class="py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="flex flex-col md:flex-row justify-between items-end mb-24 reveal">
+            <div class="max-w-2xl">
+              <span class="text-xs uppercase tracking-[0.3em] text-sage font-bold mb-4 block">O Caminho</span>
+              <h2 class="text-5xl md:text-7xl text-forest font-light">Ao longo da jornada, você vivencia:</h2>
+            </div>
+            <div class="hidden md:block w-32 h-[1px] bg-sage mb-6"></div>
+          </div>
+          
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Reconhecimento -->
+            <div class="p-10 bg-cream rounded-[3rem] border border-forest/5 reveal">
+              <div class="text-3xl mb-8 text-forest"><i class="ri-eye-line"></i></div>
+              <h4 class="text-2xl mb-4 text-forest">Reconhecimento</h4>
+              <p class="text-sm leading-relaxed text-forest/60">Você começa a enxergar padrões que antes te prendiam — mesmo sem perceber.</p>
+            </div>
+            <!-- Expansão -->
+            <div class="p-10 bg-cream rounded-[3rem] border border-forest/5 reveal" style="transition-delay: 100ms;">
+              <div class="text-3xl mb-8 text-forest"><i class="ri-lightbulb-flash-line"></i></div>
+              <h4 class="text-2xl mb-4 text-forest">Expansão de Consciência</h4>
+              <p class="text-sm leading-relaxed text-forest/60">As situações passam a fazer sentido.</p>
+            </div>
+            <!-- Soltura -->
+            <div class="p-10 bg-cream rounded-[3rem] border border-forest/5 reveal" style="transition-delay: 200ms;">
+              <div class="text-3xl mb-8 text-forest"><i class="ri-windy-line"></i></div>
+              <h4 class="text-2xl mb-4 text-forest">Soltura Energética</h4>
+              <p class="text-sm leading-relaxed text-forest/60">O que estava acumulado começa a ser liberado.</p>
+            </div>
+            <!-- Sustentação -->
+            <div class="p-10 bg-cream rounded-[3rem] border border-forest/5 reveal" style="transition-delay: 300ms;">
+              <div class="text-3xl mb-8 text-forest"><i class="ri-shield-user-line"></i></div>
+              <h4 class="text-2xl mb-4 text-forest">Sustentação Interna</h4>
+              <p class="text-sm leading-relaxed text-forest/60">Você se sente mais segura e centrada.</p>
+            </div>
+            <!-- Organização -->
+            <div class="p-10 bg-cream rounded-[3rem] border border-forest/5 reveal" style="transition-delay: 400ms;">
+              <div class="text-3xl mb-8 text-forest"><i class="ri-node-tree"></i></div>
+              <h4 class="text-2xl mb-4 text-forest">Organização Interna</h4>
+              <p class="text-sm leading-relaxed text-forest/60">Tudo começa a se alinhar dentro de você.</p>
+            </div>
+            <!-- Ação -->
+            <div class="p-10 bg-cream rounded-[3rem] border border-forest/5 reveal" style="transition-delay: 500ms;">
+              <div class="text-3xl mb-8 text-forest"><i class="ri-hand-heart-line"></i></div>
+              <h4 class="text-2xl mb-4 text-forest">Ação Consciente</h4>
+              <p class="text-sm leading-relaxed text-forest/60">Novas escolhas começam a surgir.</p>
+            </div>
+            <!-- Reposicionamento -->
+            <div class="p-10 bg-forest text-white rounded-[3rem] lg:col-span-2 reveal shadow-xl" style="transition-delay: 600ms;">
+              <div class="flex flex-col md:flex-row items-start md:items-center gap-8 h-full">
+                <div class="text-4xl text-sage"><i class="ri-restart-line"></i></div>
+                <div>
+                  <h4 class="text-3xl mb-2 text-white">Reposicionamento de Vida</h4>
+                  <p class="text-base leading-relaxed text-white/80">Sua forma de viver muda — de dentro para fora.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. COMO FUNCIONA -->
+      <section class="py-32 md:py-48 bg-cream/30 overflow-hidden relative">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="grid lg:grid-cols-2 gap-24 items-center">
+            <div class="relative reveal">
+              <div class="aspect-[4/5] rounded-[5rem] overflow-hidden shadow-2xl">
+                <img src="assets/img/about.jpeg" alt="Joana Favero" class="w-full h-full object-cover transition-all duration-1000" />
+              </div>
+              <div class="absolute -bottom-10 -right-10 w-64 h-64 bg-sage/20 rounded-full blur-[80px]"></div>
+              <div class="absolute top-1/2 left-0 -translate-x-1/2 -translate-y-1/2 -rotate-90 origin-center hidden md:block">
+                <span class="text-[120px] font-serif text-forest/5 whitespace-nowrap tracking-widest leading-none">ACOLHIMENTO</span>
+              </div>
+            </div>
+            <div class="space-y-12">
+              <div class="reveal">
+                <h2 class="text-4xl md:text-6xl text-forest font-light leading-tight">Cada sessão é um espaço seguro, conduzido com presença e profundidade.</h2>
+                <div class="mt-10 space-y-6 text-xl text-forest/60 font-light">
+                  <p>Você não precisa saber o que dizer. Você não precisa estar “pronta”.</p>
+                  <p>Eu te conduzo com escuta sensível em um processo de cura integral.</p>
+                </div>
+              </div>
+              
+              <div class="p-10 bg-forest text-white rounded-[3rem] shadow-xl relative overflow-hidden reveal">
+                <div class="relative z-10">
+                  <p class="text-xl italic font-light leading-relaxed">
+                    "E também realizamos uma leitura com a Mesa Radiônica Almaterapia, aprofundando o diagnóstico emocional e energético do seu momento."
+                  </p>
+                </div>
+                <div class="absolute -bottom-10 -right-10 opacity-10">
+                  <i class="ri-compass-3-line text-9xl"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. O QUE VOCÊ COMEÇA A SENTIR -->
+      <section class="py-32 bg-white">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+          <div class="reveal mb-24">
+            <h2 class="text-5xl md:text-7xl text-forest mb-6 font-light">O que você começa a sentir</h2>
+            <p class="text-forest/40 text-lg tracking-widest uppercase font-medium">Nas primeiras sessões, a clareza desperta:</p>
+          </div>
+          
+          <div class="grid md:grid-cols-2 gap-16 text-left">
+            <div class="flex items-start gap-8 group reveal">
+              <span class="text-5xl md:text-7xl font-serif text-sage/20 group-hover:text-sage/40 transition-all duration-700 italic">01</span>
+              <div class="pt-4 md:pt-8">
+                <h3 class="text-2xl md:text-3xl text-forest mb-2 italic">Clareza Profunda</h3>
+                <p class="text-forest/60 font-light">Sobre o que você realmente sente.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-8 group reveal" style="transition-delay: 100ms;">
+              <span class="text-5xl md:text-7xl font-serif text-sage/20 group-hover:text-sage/40 transition-all duration-700 italic">02</span>
+              <div class="pt-4 md:pt-8">
+                <h3 class="text-2xl md:text-3xl text-forest mb-2 italic">Alívio Emocional</h3>
+                <p class="text-forest/60 font-light">Uma descarga do que estava pesado.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-8 group reveal" style="transition-delay: 200ms;">
+              <span class="text-5xl md:text-7xl font-serif text-sage/20 group-hover:text-sage/40 transition-all duration-700 italic">03</span>
+              <div class="pt-4 md:pt-8">
+                <h3 class="text-2xl md:text-3xl text-forest mb-2 italic">Leveza Real</h3>
+                <p class="text-forest/60 font-light">Sentir que há espaço para respirar.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-8 group reveal" style="transition-delay: 300ms;">
+              <span class="text-5xl md:text-7xl font-serif text-sage/20 group-hover:text-sage/40 transition-all duration-700 italic">04</span>
+              <div class="pt-4 md:pt-8">
+                <h3 class="text-2xl md:text-3xl text-forest mb-2 italic">Padrões Visíveis</h3>
+                <p class="text-forest/60 font-light">Entendimento real do porquê se repete.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-8 group md:col-span-2 md:justify-center reveal" style="transition-delay: 400ms;">
+              <span class="text-5xl md:text-7xl font-serif text-sage/20 group-hover:text-sage/40 transition-all duration-700 italic">05</span>
+              <div class="pt-4 md:pt-8">
+                <h3 class="text-2xl md:text-3xl text-forest mb-2 italic">Reposicionamento</h3>
+                <p class="text-forest/60 font-light text-center">Mudanças na forma de reagir e se colocar no mundo.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 8. PARA QUEM É -->
+      <section class="py-32 bg-forest text-white overflow-hidden relative">
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+          <div class="grid lg:grid-cols-2 gap-12">
+            <!-- Para quem é -->
+            <div class="p-16 bg-white/5 rounded-[4rem] border border-white/10 reveal">
+              <h3 class="text-4xl md:text-5xl mb-12 text-sage font-light italic">Essa jornada é para você que:</h3>
+              <ul class="space-y-8">
+                <li class="flex items-start gap-5 group">
+                  <div class="w-6 h-6 rounded-full bg-sage/20 flex items-center justify-center group-hover:bg-sage/40 transition-colors mt-1">
+                    <i class="ri-check-line text-sage text-sm"></i>
+                  </div>
+                  <span class="text-xl text-white/80 font-light">Sente ansiedade ou sobrecarga emocional</span>
+                </li>
+                <li class="flex items-start gap-5 group">
+                  <div class="w-6 h-6 rounded-full bg-sage/20 flex items-center justify-center group-hover:bg-sage/40 transition-colors mt-1">
+                    <i class="ri-check-line text-sage text-sm"></i>
+                  </div>
+                  <span class="text-xl text-white/80 font-light">Vive padrões repetitivos e cansativos</span>
+                </li>
+                <li class="flex items-start gap-5 group">
+                  <div class="w-6 h-6 rounded-full bg-sage/20 flex items-center justify-center group-hover:bg-sage/40 transition-colors mt-1">
+                    <i class="ri-check-line text-sage text-sm"></i>
+                  </div>
+                  <span class="text-xl text-white/80 font-light">Quer entender a raiz, não apenas aliviar sintomas</span>
+                </li>
+                <li class="flex items-start gap-5 group">
+                  <div class="w-6 h-6 rounded-full bg-sage/20 flex items-center justify-center group-hover:bg-sage/40 transition-colors mt-1">
+                    <i class="ri-check-line text-sage text-sm"></i>
+                  </div>
+                  <span class="text-xl text-white/80 font-light">Está pronta para uma transformação real</span>
+                </li>
+              </ul>
+            </div>
+            <!-- Para quem não é -->
+            <div class="p-16 bg-cream/5 rounded-[4rem] border border-white/5 reveal" style="transition-delay: 200ms;">
+              <h3 class="text-4xl md:text-5xl mb-12 text-white/30 font-light">Essa jornada não é para:</h3>
+              <ul class="space-y-8 mb-12">
+                <li class="flex items-start gap-5">
+                  <i class="ri-close-line text-white/20 text-2xl mt-1"></i>
+                  <span class="text-xl text-white/30 font-light">Quem busca apenas soluções rápidas e milagrosas</span>
+                </li>
+                <li class="flex items-start gap-5">
+                  <i class="ri-close-line text-white/20 text-2xl mt-1"></i>
+                  <span class="text-xl text-white/30 font-light">Quem não deseja se envolver no processo</span>
+                </li>
+              </ul>
+              <div class="p-8 bg-sage/10 rounded-3xl border border-sage/10">
+                <p class="text-base text-sage/80 leading-relaxed italic">
+                  "Mas se você deseja algo mais leve para começar, você pode iniciar pela primeira sessão e sentir se faz sentido para o seu momento."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 10. A PRIMEIRA SESSÃO -->
+      <section class="py-32 bg-white">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+          <div class="reveal">
+            <span class="text-xs uppercase tracking-[0.4em] text-sage font-bold mb-6 block">O Primeiro Passo</span>
+            <h2 class="text-5xl md:text-7xl text-forest mb-12 font-light italic">A Primeira Sessão (Porta de Entrada)</h2>
+          </div>
+          <div class="bg-cream/50 rounded-[5rem] p-12 md:p-20 mb-16 shadow-inner border border-forest/5 reveal">
+            <p class="text-2xl text-forest/60 mb-16 font-light">Na primeira sessão, você já vivencia:</p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-12">
+              <div class="group">
+                <div class="w-16 h-16 bg-white rounded-3xl shadow-sm flex items-center justify-center mx-auto mb-6 text-sage group-hover:bg-forest group-hover:text-white transition-all duration-500">
+                  <i class="ri-user-heart-line text-2xl"></i>
+                </div>
+                <span class="text-[10px] md:text-xs font-bold uppercase tracking-widest text-forest">Escuta Profunda</span>
+              </div>
+              <div class="group">
+                <div class="w-16 h-16 bg-white rounded-3xl shadow-sm flex items-center justify-center mx-auto mb-6 text-sage group-hover:bg-forest group-hover:text-white transition-all duration-500">
+                  <i class="ri-mind-map text-2xl"></i>
+                </div>
+                <span class="text-[10px] md:text-xs font-bold uppercase tracking-widest text-forest">Organização Emocional</span>
+              </div>
+              <div class="group">
+                <div class="w-16 h-16 bg-white rounded-3xl shadow-sm flex items-center justify-center mx-auto mb-6 text-sage group-hover:bg-forest group-hover:text-white transition-all duration-500">
+                  <i class="ri-compass-discover-line text-2xl"></i>
+                </div>
+                <span class="text-[10px] md:text-xs font-bold uppercase tracking-widest text-forest">Leitura Energética</span>
+              </div>
+              <div class="group">
+                <div class="w-16 h-16 bg-white rounded-3xl shadow-sm flex items-center justify-center mx-auto mb-6 text-sage group-hover:bg-forest group-hover:text-white transition-all duration-500">
+                  <i class="ri-search-eye-line text-2xl"></i>
+                </div>
+                <span class="text-[10px] md:text-xs font-bold uppercase tracking-widest text-forest">Foco nos Bloqueios</span>
+              </div>
+            </div>
+          </div>
+          <div class="reveal">
+            <p class="text-3xl text-forest font-light italic">E já começa a sentir mais clareza e alívio imediato.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 11/12. BÔNUS + INVESTIMENTO -->
+      <section class="py-32 bg-cream relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+          <div class="grid lg:grid-cols-2 gap-8 items-stretch">
+            <div class="bg-forest text-white p-16 md:p-24 rounded-[4rem] shadow-2xl relative overflow-hidden group reveal">
+              <div class="absolute -top-20 -right-20 w-80 h-80 bg-sage rounded-full opacity-5 group-hover:scale-150 transition-transform duration-1000"></div>
+              <div class="relative z-10">
+                <span class="inline-block bg-sage/20 text-sage px-5 py-2 rounded-full text-[10px] font-bold uppercase tracking-[0.2em] mb-10 border border-sage/10">Presente de Início</span>
+                <h3 class="text-5xl md:text-6xl mb-8 font-light italic">Bônus Exclusivo</h3>
+                <p class="text-xl text-white/70 leading-relaxed font-light mb-12">
+                  Ao iniciar sua jornada, você recebe uma leitura inicial energética e emocional do seu momento — trazendo clareza imediata sobre os padrões que estão ativos hoje.
+                </p>
+                <div class="w-16 h-[1px] bg-sage/30"></div>
+              </div>
+            </div>
+            
+            <div class="bg-white p-16 md:p-24 rounded-[4rem] shadow-xl border border-forest/5 flex flex-col justify-center text-center reveal" style="transition-delay: 200ms;">
+              <h3 class="text-5xl text-forest mb-8 font-light tracking-tight">Investimento</h3>
+              <p class="text-xl text-forest/50 leading-relaxed mb-12 font-light">
+                Esse é um acompanhamento terapêutico profundo, exclusivo e personalizado.
+              </p>
+              <div class="p-10 bg-cream/50 rounded-3xl border border-forest/5 mb-12 shadow-inner italic font-light text-lg">
+                "O investimento é apresentado após uma breve conversa, para que eu entenda seu momento e direcione o melhor formato para você."
+              </div>
+              <a href="https://wa.me/5554999141018" target="_blank" class="w-full py-6 bg-forest text-white rounded-full text-sm tracking-widest uppercase font-bold hover:bg-forest/90 transition-all shadow-xl inline-flex items-center justify-center gap-4 group">
+                <i class="ri-whatsapp-line text-2xl"></i>
+                <span>Falar com Joana</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 13. CHAMADA FINAL -->
+      <section class="py-48 bg-white relative overflow-hidden">
+        <div class="max-w-5xl mx-auto px-6 text-center relative z-10">
+          <div class="reveal">
+            <h2 class="text-4xl md:text-7xl text-forest mb-16 leading-[1.2] font-light italic text-balance">
+              Se você sente que chegou o momento de parar de repetir os mesmos padrões e começar uma transformação real…
+            </h2>
+          </div>
+          <div class="reveal">
+            <a href="https://wa.me/5554999141018" target="_blank" class="inline-flex items-center gap-6 bg-forest text-white px-16 py-8 rounded-full text-sm md:text-base tracking-[0.2em] uppercase font-bold hover:bg-sage hover:text-forest transition-all shadow-2xl group mb-20">
+              <span>Agendar minha jornada</span>
+              <i class="ri-arrow-right-line text-2xl group-hover:translate-x-3 transition-transform"></i>
+            </a>
+          </div>
+          <div class="mt-20 pt-20 border-t border-forest/5 reveal">
+            <p class="text-3xl md:text-5xl text-forest italic font-extralight leading-relaxed max-w-3xl mx-auto">
+              "Talvez não seja sobre ter todas as respostas agora. Talvez seja sobre se permitir <span class="text-sage not-italic font-medium">começar</span>."
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="bg-forest">
+        <div class="max-w-7xl mx-auto px-6 py-20">
+          <div class="grid md:grid-cols-12 gap-12 lg:gap-16 mb-20">
+            <div class="md:col-span-5">
+              <div class="flex items-center space-x-3 mb-8">
+                <img src="assets/img/logotipo.png" alt="Joana Favero Logotipo" class="h-16 md:h-[80px] w-auto" />
+              </div>
+              <p class="text-base text-cream/70 mb-10 leading-relaxed font-sans font-light max-w-sm">
+                Terapias integrativas para reconectar corpo, mente e espírito com acolhimento profundo e jornadas de autodescoberta.
+              </p>
+              <a href="https://wa.me/5511987654321" target="_blank" class="group px-8 py-4 bg-[#616d60] text-white rounded-full text-sm font-bold tracking-widest uppercase hover:bg-[#768574] hover:text-white transition-all inline-flex items-center justify-center space-x-3 whitespace-nowrap cursor-pointer shadow-lg font-sans">
+                <span>Agendar Sessão</span>
+                <i class="ri-arrow-right-line text-xl group-hover:translate-x-2 transition-transform"></i>
+              </a>
+            </div>
+            
+            <div class="md:col-span-3">
+              <h4 class="text-xs font-bold tracking-[0.2em] mb-8 text-sage uppercase font-sans">
+                Navegação
+              </h4>
+              <ul class="space-y-5">
+                <li>
+                  <a href="index.html#home" class="text-base text-cream/80 hover:text-sage transition-colors cursor-pointer font-sans font-light flex items-center group">
+                    <span class="w-2 h-[1px] bg-sage/50 mr-3 group-hover:w-4 transition-all"></span> Início
+                  </a>
+                </li>
+                <li>
+                  <a href="index.html#about" class="text-base text-cream/80 hover:text-sage transition-colors cursor-pointer font-sans font-light flex items-center group">
+                    <span class="w-2 h-[1px] bg-sage/50 mr-3 group-hover:w-4 transition-all"></span> Sobre
+                  </a>
+                </li>
+                <li>
+                  <a href="index.html#services" class="text-base text-cream/80 hover:text-sage transition-colors cursor-pointer font-sans font-light flex items-center group">
+                    <span class="w-2 h-[1px] bg-sage/50 mr-3 group-hover:w-4 transition-all"></span> Terapias
+                  </a>
+                </li>
+                <li>
+                  <a href="index.html#testimonials" class="text-base text-cream/80 hover:text-sage transition-colors cursor-pointer font-sans font-light flex items-center group">
+                    <span class="w-2 h-[1px] bg-sage/50 mr-3 group-hover:w-4 transition-all"></span> Depoimentos
+                  </a>
+                </li>
+                <li>
+                  <a href="index.html#contact" class="text-base text-cream/80 hover:text-sage transition-colors cursor-pointer font-sans font-light flex items-center group">
+                    <span class="w-2 h-[1px] bg-sage/50 mr-3 group-hover:w-4 transition-all"></span> Contato
+                  </a>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="md:col-span-4">
+              <h4 class="text-xs font-bold tracking-[0.2em] mb-8 text-sage uppercase font-sans">
+                Terapias
+              </h4>
+              <ul class="space-y-4 mb-10">
+                <li>
+                  <a href="jornada-ressoar.html" class="text-base text-white font-medium hover:text-sage transition-colors cursor-pointer flex items-center font-sans group">
+                    <i class="ri-star-fill text-sage mr-3 group-hover:scale-125 transition-transform"></i> Jornada R.E.S.S.O.A.R™
+                  </a>
+                </li>
+                <li>
+                  <a href="terapia-reencarnacionista.html" class="text-base text-cream/80 hover:text-sage transition-colors cursor-pointer flex items-center font-sans font-light group">
+                    <i class="ri-leaf-line text-sage mr-3 group-hover:-rotate-12 transition-transform"></i> Terapia Reencarnacionista e Sistêmica
+                  </a>
+                </li>
+                <li>
+                  <a href="mesa-radionica.html" class="text-base text-cream/80 hover:text-sage transition-colors cursor-pointer flex items-center font-sans font-light group">
+                    <i class="ri-compass-3-line text-sage mr-3 group-hover:rotate-12 transition-transform"></i> Mesa Radiônica Almaterapia
+                  </a>
+                </li>
+                <li>
+                  <a href="mapa-numerologico.html" class="text-base text-cream/80 hover:text-sage transition-colors cursor-pointer flex items-center font-sans font-light group">
+                    <i class="ri-file-text-line text-sage mr-3 group-hover:-translate-y-1 transition-transform"></i> Mapa Numerológico
+                  </a>
+                </li>
+                <li>
+                  <a href="terapia-floral.html" class="text-base text-cream/80 hover:text-sage transition-colors cursor-pointer flex items-center font-sans font-light group">
+                    <i class="ri-plant-line text-sage mr-3 group-hover:rotate-12 transition-transform"></i> Terapia Floral
+                  </a>
+                </li>
+                <li>
+                  <a href="reiki.html" class="text-base text-cream/80 hover:text-sage transition-colors cursor-pointer flex items-center font-sans font-light group">
+                    <i class="ri-sparkling-line text-sage mr-3 group-hover:scale-125 transition-transform"></i> Reiki
+                  </a>
+                </li>
+              </ul>
+              
+              <h4 class="text-xs font-bold tracking-[0.2em] mb-4 text-sage uppercase font-sans">
+                Contato
+              </h4>
+              <div class="space-y-3">
+                <a href="https://wa.me/5511987654321" target="_blank" class="flex items-center text-base text-cream/80 hover:text-white transition-colors font-sans font-light group">
+                  <i class="ri-whatsapp-line text-sage mr-3 text-lg group-hover:scale-110 transition-transform"></i> (11) 98765-4321
+                </a>
+                <a href="mailto:contato@joanafavero.com.br" class="flex items-center text-base text-cream/80 hover:text-white transition-colors font-sans font-light group">
+                  <i class="ri-mail-line text-sage mr-3 text-lg group-hover:scale-110 transition-transform"></i> contato@joanafavero.com.br
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="border-t border-cream/10 pt-10 flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
+            <div class="flex space-x-8">
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer nofollow" class="text-base text-cream/60 hover:text-white transition-colors cursor-pointer font-sans font-light flex items-center gap-2 group">
+                <i class="ri-instagram-line text-xl group-hover:-translate-y-1 transition-transform"></i> Instagram
+              </a>
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer nofollow" class="text-base text-cream/60 hover:text-white transition-colors cursor-pointer font-sans font-light flex items-center gap-2 group">
+                <i class="ri-facebook-circle-line text-xl group-hover:-translate-y-1 transition-transform"></i> Facebook
+              </a>
+              <a href="https://wa.me/5511987654321" target="_blank" rel="noopener noreferrer nofollow" class="text-base text-cream/60 hover:text-white transition-colors cursor-pointer font-sans font-light flex items-center gap-2 group">
+                <i class="ri-whatsapp-line text-xl group-hover:-translate-y-1 transition-transform"></i> WhatsApp
+              </a>
+            </div>
+            <p class="text-sm text-cream/40 font-sans font-light">
+              © 2026 Joana Fávero. Todos os direitos reservados.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="assets/scripts.js?v=3"></script>
+  </body>
+</html>
